@@ -1,8 +1,13 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -14,35 +19,108 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="eyes_1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="NY4-Kv-j1f">
-                                <rect key="frame" x="49" y="56" width="216" height="100"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eyes_1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="NY4-Kv-j1f">
+                                <rect key="frame" x="77.5" y="72" width="220" height="100"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yXb-1x-fkn">
-                                <rect key="frame" x="5" y="56" width="56" height="100"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yXb-1x-fkn">
+                                <rect key="frame" x="13" y="72" width="56.5" height="100"/>
                                 <state key="normal" image="arrow_left.jpg">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oaW-ja-FCK">
-                                <rect key="frame" x="257" y="56" width="61" height="100"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oaW-ja-FCK">
+                                <rect key="frame" x="305.5" y="72" width="60.5" height="100"/>
                                 <state key="normal" image="arrow_right.jpg">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nose_1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="EyK-yp-lnF">
+                                <rect key="frame" x="77.5" y="222" width="220" height="100"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mouth_1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="cV0-4z-u56">
+                                <rect key="frame" x="77.5" y="372" width="220" height="100"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ee2-4b-6P2">
+                                <rect key="frame" x="13" y="222" width="56.5" height="100"/>
+                                <state key="normal" image="arrow_left.jpg">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ypF-TI-Iqy">
+                                <rect key="frame" x="305.5" y="222" width="60.5" height="100"/>
+                                <state key="normal" image="arrow_right.jpg">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Usp-Gx-RTP">
+                                <rect key="frame" x="305.5" y="372" width="60.5" height="100"/>
+                                <state key="normal" image="arrow_right.jpg">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MeY-No-nAW">
+                                <rect key="frame" x="13" y="372" width="56.5" height="100"/>
+                                <state key="normal" image="arrow_left.jpg">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ypF-TI-Iqy" firstAttribute="leading" secondItem="EyK-yp-lnF" secondAttribute="trailing" constant="8" id="1Cm-4P-pT6"/>
+                            <constraint firstItem="EyK-yp-lnF" firstAttribute="leading" secondItem="Ee2-4b-6P2" secondAttribute="trailing" constant="8" symbolic="YES" id="2Yg-5w-8HN"/>
+                            <constraint firstItem="NY4-Kv-j1f" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="5wv-Sf-7g8"/>
+                            <constraint firstItem="oaW-ja-FCK" firstAttribute="leading" secondItem="NY4-Kv-j1f" secondAttribute="trailing" constant="8" symbolic="YES" id="7JV-HF-h9f"/>
+                            <constraint firstItem="EyK-yp-lnF" firstAttribute="leading" secondItem="Ee2-4b-6P2" secondAttribute="trailing" constant="8" id="885-RU-rZb"/>
+                            <constraint firstItem="cV0-4z-u56" firstAttribute="leading" secondItem="MeY-No-nAW" secondAttribute="trailing" constant="8" id="B31-yO-d39"/>
+                            <constraint firstItem="oaW-ja-FCK" firstAttribute="trailing" secondItem="ypF-TI-Iqy" secondAttribute="trailing" id="Br0-Me-6xB"/>
+                            <constraint firstItem="Ee2-4b-6P2" firstAttribute="top" secondItem="yXb-1x-fkn" secondAttribute="bottom" constant="50" id="G1t-jh-W8q"/>
+                            <constraint firstItem="yXb-1x-fkn" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-3" id="KUf-hz-WPV"/>
+                            <constraint firstItem="MeY-No-nAW" firstAttribute="top" secondItem="cV0-4z-u56" secondAttribute="top" id="NYo-HA-hrM"/>
+                            <constraint firstItem="Ee2-4b-6P2" firstAttribute="leading" secondItem="MeY-No-nAW" secondAttribute="leading" id="QEv-nW-fuP"/>
+                            <constraint firstItem="MeY-No-nAW" firstAttribute="top" secondItem="Ee2-4b-6P2" secondAttribute="bottom" constant="50" id="Wpg-iS-F5M"/>
+                            <constraint firstItem="yXb-1x-fkn" firstAttribute="top" secondItem="NY4-Kv-j1f" secondAttribute="top" id="Wyn-Jl-gRV"/>
+                            <constraint firstItem="EyK-yp-lnF" firstAttribute="top" secondItem="ypF-TI-Iqy" secondAttribute="top" id="X0Q-bE-ga4"/>
+                            <constraint firstItem="ypF-TI-Iqy" firstAttribute="leading" secondItem="Usp-Gx-RTP" secondAttribute="leading" id="a8d-bM-lLk"/>
+                            <constraint firstItem="NY4-Kv-j1f" firstAttribute="top" secondItem="oaW-ja-FCK" secondAttribute="top" id="aEZ-hj-6mM"/>
+                            <constraint firstItem="NY4-Kv-j1f" firstAttribute="leading" secondItem="yXb-1x-fkn" secondAttribute="trailing" constant="8" symbolic="YES" id="e5i-Tc-Kz1"/>
+                            <constraint firstItem="cV0-4z-u56" firstAttribute="leading" secondItem="MeY-No-nAW" secondAttribute="trailing" constant="8" symbolic="YES" id="eFb-gg-JSc"/>
+                            <constraint firstItem="Ee2-4b-6P2" firstAttribute="top" secondItem="EyK-yp-lnF" secondAttribute="top" id="egr-cx-Q8e"/>
+                            <constraint firstItem="yXb-1x-fkn" firstAttribute="leading" secondItem="Ee2-4b-6P2" secondAttribute="leading" id="eme-8L-6RM"/>
+                            <constraint firstItem="ypF-TI-Iqy" firstAttribute="trailing" secondItem="Usp-Gx-RTP" secondAttribute="trailing" id="g4V-k7-2Yb"/>
+                            <constraint firstItem="yXb-1x-fkn" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="52" id="hFP-rU-Avl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="oaW-ja-FCK" secondAttribute="trailing" constant="-7" id="ipD-ol-cQ2"/>
+                            <constraint firstItem="cV0-4z-u56" firstAttribute="top" secondItem="Usp-Gx-RTP" secondAttribute="top" id="kmg-2L-d1F"/>
+                            <constraint firstItem="EyK-yp-lnF" firstAttribute="leading" secondItem="cV0-4z-u56" secondAttribute="leading" id="n6D-hn-hHK"/>
+                            <constraint firstItem="NY4-Kv-j1f" firstAttribute="leading" secondItem="EyK-yp-lnF" secondAttribute="leading" id="oJR-h9-ryZ"/>
+                            <constraint firstItem="oaW-ja-FCK" firstAttribute="leading" secondItem="ypF-TI-Iqy" secondAttribute="leading" id="uPW-1R-Esw"/>
+                            <constraint firstItem="Usp-Gx-RTP" firstAttribute="leading" secondItem="cV0-4z-u56" secondAttribute="trailing" constant="8" id="xjb-uA-wyd"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="eyesImage" destination="NY4-Kv-j1f" id="9KD-Mq-M2D"/>
+                        <outlet property="mouthImage" destination="cV0-4z-u56" id="3Oc-nb-VSI"/>
+                        <outlet property="noseImage" destination="EyK-yp-lnF" id="fZH-Tu-muf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="33.5" y="35.5"/>
         </scene>
     </scenes>
     <resources>
         <image name="arrow_left.jpg" width="50" height="100"/>
         <image name="arrow_right.jpg" width="50" height="100"/>
         <image name="eyes_1.jpg" width="220" height="100"/>
+        <image name="mouth_1.jpg" width="220" height="100"/>
+        <image name="nose_1.jpg" width="220" height="100"/>
     </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
 </document>

@@ -10,6 +10,10 @@
 
 @interface LPSViewController ()
 
+@property (weak, nonatomic) IBOutlet UIImageView *eyesImage;
+@property (weak, nonatomic) IBOutlet UIImageView *noseImage;
+@property (weak, nonatomic) IBOutlet UIImageView *mouthImage;
+
 @end
 
 @implementation LPSViewController
