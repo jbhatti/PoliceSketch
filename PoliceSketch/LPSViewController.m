@@ -7,21 +7,54 @@
 //
 
 #import "LPSViewController.h"
+#import "Face.h"
+#import "FaceManager.h"
+
 
 @interface LPSViewController ()
 
 @property (weak, nonatomic) IBOutlet UIImageView *eyesImage;
 @property (weak, nonatomic) IBOutlet UIImageView *noseImage;
 @property (weak, nonatomic) IBOutlet UIImageView *mouthImage;
+@property (nonatomic, strong) FaceManager* manager;
 
 @end
 
 @implementation LPSViewController
 
+- (IBAction)moveEyesForward:(id)sender {
+    Face* nextEyes = [self.manager nextEyes];
+    self.eyesImage.image = nextEyes.image;
+    
+}
+
+- (IBAction)moveEyesBackward:(id)sender {
+    Face* previousEyes = [self.manager previousEyes];
+    self.eyesImage.image = previousEyes.image;
+}
+
+- (IBAction)moveNoseForward:(id)sender {
+}
+
+- (IBAction)moveMouthForward:(id)sender {
+}
+
+- (IBAction)moveMouthBackward:(id)sender {
+}
+
+- (IBAction)moveNoseBackward:(id)sender {
+}
+
+
+- (void)updateView {
+    
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	
+    self.manager = [FaceManager new];
+    [self updateView];
     // Here is where you will create the buttons & image views and add them to the view.
 }
 

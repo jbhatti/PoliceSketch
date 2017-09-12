@@ -30,12 +30,18 @@
                                 <state key="normal" image="arrow_left.jpg">
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="moveEyesBackward:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="GoB-jx-2ip"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oaW-ja-FCK">
                                 <rect key="frame" x="305.5" y="72" width="60.5" height="100"/>
                                 <state key="normal" image="arrow_right.jpg">
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="moveEyesForward:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ODv-HB-3ek"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nose_1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="EyK-yp-lnF">
                                 <rect key="frame" x="77.5" y="222" width="220" height="100"/>
@@ -48,24 +54,36 @@
                                 <state key="normal" image="arrow_left.jpg">
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="moveNoseBackward:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="7zj-FI-KPL"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ypF-TI-Iqy">
                                 <rect key="frame" x="305.5" y="222" width="60.5" height="100"/>
                                 <state key="normal" image="arrow_right.jpg">
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="moveNoseForward:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="J9n-Q1-gEB"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Usp-Gx-RTP">
                                 <rect key="frame" x="305.5" y="372" width="60.5" height="100"/>
                                 <state key="normal" image="arrow_right.jpg">
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="moveMouthForward:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ObC-iG-OGg"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MeY-No-nAW">
                                 <rect key="frame" x="13" y="372" width="56.5" height="100"/>
                                 <state key="normal" image="arrow_left.jpg">
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="moveMouthBackward:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Jho-UY-F4l"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
